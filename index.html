@@ -8,6 +8,7 @@
 
     <header class="page-header">
       <nav class="navigation">
+        <img class="header-contacts-logo" src="" alt="Логотип Седона">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="home.html">Главная</a>
@@ -98,8 +99,38 @@
       </section>
     </main>
     <footer class="page-footer">
+      <section class="sending">
       <h2 class="sending-title">Подпишитесь на рассылку</h2>
       <p class="sending-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post"></form>
+      <label for="newsletter-email">Email</label>
+      <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="foote-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="foote-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="foote-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-contacts-address-phone" href="tel:+7 (812) 812-12-12">+7 800 555-86-28</a>
+        <a class="htmlacademy-link" href=" https://htmlacademy.ru/">html academy</a>
+      </section>
     </footer>
   </body>
 </html>
