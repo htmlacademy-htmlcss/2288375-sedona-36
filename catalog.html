@@ -2,11 +2,102 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Гостиницы Седоны</title>
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html"></a>
+        <img class="page-header-logo" src="" alt="Логотип Седона">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="home.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="About_Sedona.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="Hotels.html">Гостаницы</a>
+          </li>
+           </ul>
+           <ul class="navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="vvisually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="vvisually-hidden">
+                  Лайк
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="vvisually-hidden">
+                  Выбор
+                </span>
+              </a>
+            </li>
+         </ul>
+      </nav>
+    </header>
+    <main class="main-inner">
+    <header class="inner-header">
+      <h1 class="inner-header-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гостиницы</a>
+        </li>
+      </ul>
+    </header>
 
+    <section class="hotels-filter">
+      <h2 class="visually-hidden"> Список гостиниц с  фильтрами</h2>
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get"></form>
+    </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="sending">
+      <h2 class="sending-title">Подпишитесь на рассылку</h2>
+      <p class="sending-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post"></form>
+      <label for="newsletter-email">Email</label>
+      <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </form>
+      </section>
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="foote-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="foote-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="foote-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer-contacts-address-phone" href="tel:+7 (812) 812-12-12">+7 800 555-86-28</a>
+        <a class="htmlacademy-link" href=" https://htmlacademy.ru/">html academy</a>
+      </section>
+    </footer>
   </body>
 </html>
