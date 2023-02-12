@@ -104,6 +104,7 @@ background-color: #FFFFFF;
   background-image: url("../images/mountains_full.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  text-align: center;
   width: 1200px;
   height: 485px;
 }
@@ -137,6 +138,23 @@ background-color: #FFFFFF;
 .advantages-description {
   text-align: center;
 }
+
+.first-last-advantage {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+.second-advantage {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.third-advantages {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.fourth-advantages {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
 .services-title-main {
   font-size: 30px;
   line-height: 36px;
@@ -144,6 +162,7 @@ background-color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
+
 .services-description-main {
   font-size: 22px;
   line-height: 26px;
@@ -162,6 +181,13 @@ background-color: #FFFFFF;
 .services-description {
   text-align: center;
   color: #333333;
+}
+.first-services {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.third-services {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .choice-title {
@@ -191,6 +217,15 @@ background-color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+.sending {
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  background-image: url("../images/subscription.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 414px;
 }
 
 .newsletter-email {
