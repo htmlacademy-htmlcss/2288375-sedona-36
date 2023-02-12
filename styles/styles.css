@@ -102,7 +102,7 @@ background-color: #FFFFFF;
   color: #000000;
   background-color:#FFFFFF ;
   background-image: url("../images/mountains_full.jpg");
-  background-size: 100% auto;
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
   width: 1200px;
   height: 485px;
@@ -217,3 +217,111 @@ background-color: #FFFFFF;
   text-decoration: none;
   color: #000000;
 }
+
+.inner-title {
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.sorting-container{
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  background-image: url("../images/filter.jpg");
+  background-size: 100% auto, cover;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 412px;
+}
+
+.breadcrumbs {
+  color: #FFFFFF;
+  }
+
+.breadcrumbs-link {
+  color: inherit;
+  background-color: inherit;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700px;
+  color: #FFFFFF;
+  }
+
+  .control {
+  color: #FFFFFF;
+  }
+
+  .apply {
+  background-color:#82B3D3;
+  }
+  .reset {
+  border: none;
+  background-color: transparent;
+  }
+
+  .found-hidden {
+    font-size: 30px;
+  line-height: 36px;
+  font-weight: 700px;
+  text-align: left;
+  text-transform: uppercase;
+  color:#000000;
+    }
+  .hotels-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  text-decoration: none; /* не работает */
+  color: #000000;
+  }
+  .hotels-description {
+    text-align: left;
+  }
+
+  .price-description {
+
+    text-align: right;
+  }
+
+  .more-hotels {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .favorites {
+  font-size: 16px;
+  line-height: 20px;
+  background-color:#82B3D3;
+  }
+  .favorites-top {
+    background-color:#7DB54F;
+  }
+
+  .rating-description {
+  font-size: 16px;
+  line-height: 20px;
+  width: 140px;
+  height: 37px;
+  border: 5px solid #F2F2F2;
+  background-color: #F2F2F2;
+  text-align: center;
+  }
+
+  .pagination-link {
+  color: #FFFFFF;
+  background-color:#82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  }
+
+  .pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+  }
