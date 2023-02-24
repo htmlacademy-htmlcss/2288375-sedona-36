@@ -10,9 +10,9 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" alt="Логотип Седона.">
-      </a>
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="./images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -146,8 +146,10 @@
                   alt="Amara Resort & Spa.">
                 <h3 class="hotels-card-title">Amara Resort & Spa</h3>
               </a>
-              <p class="hotels-description">Гостиница</p>
-              <p class="price-description">От 4000 ₽</p>
+              <div class="conteiner-price">
+                <p class="hotels-description">Гостиница</p>
+                <p class="price-description">От 4000 ₽</p>
+              </div>
               <a class="hotels-card-button button more-hotels" href="#">подробнее</a>
               <a class="hotels-card-button button favorites" href="#">в избранное</a>
               <div>
@@ -161,8 +163,10 @@
                   alt="Villas at Poco Diablo.">
                 <h3 class="hotels-card-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="hotels-description">Гостиница</p>
-              <p class="price-description">От 5000 ₽</p>
+              <div class="conteiner-price">
+                <p class="hotels-description">Гостиница</p>
+                <p class="price-description">От 5000 ₽</p>
+              </div>
               <a class="hotels-card-button button more-hotels" href="#">подробнее</a>
               <a class="hotels-card-button button favorites-top" href="#">в избранном</a>
               <div>
@@ -176,8 +180,10 @@
                   alt="Desert Quail Inn.">
                 <h3 class="hotels-card-title">Desert Quail Inn</h3>
               </a>
-              <p class="hotels-description">Гостиница</p>
-              <p class="price-description">От 2500 ₽</p>
+              <div class="conteiner-price">
+                <p class="hotels-description">Гостиница</p>
+                <p class="price-description">От 2500 ₽</p>
+              </div>
               <a class="hotels-card-button button more-hotels" href="#">подробнее</a>
               <a class="hotels-card-button button favorites" href="#">в избранное</a>
               <div>
@@ -190,8 +196,10 @@
                 <img class="hotels-card-image" src="./images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn.">
                 <h3 class="hotels-card-title">GreenTree Inn</h3>
               </a>
-              <p class="hotels-description">Гостиница</p>
-              <p class="price-description">От 1500 ₽</p>
+              <div class="conteiner-price">
+                <p class="hotels-description">Гостиница</p>
+                <p class="price-description">От 1500 ₽</p>
+              </div>
               <a class="hotels-card-button button more-hotels" href="#">подробнее</a>
               <a class="hotels-card-button button favorites" href="#">в избранное</a>
               <div>
@@ -231,8 +239,8 @@
           <p class="sending-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="newsletter-email"></label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
+            <input class="field-catalog" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+              id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться
               <span class="visually-hidden">Подписаться.</span>
             </button>
