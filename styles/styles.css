@@ -147,7 +147,7 @@ body {
 .hero {
   color: #000000;
   background-color:#FFFFFF ;
-  background-image: url("../images/mountains_full.jpg");
+  background-image: url("../images/mountains-full.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -211,7 +211,6 @@ body {
 }
 
 .lowercase-advantages-container {
-
   width: 400px;
   padding: 0 ;
   text-align: center;
@@ -238,6 +237,15 @@ body {
   background-color: #82B3D3;
   padding: 0;
 }
+
+.last-advantage {
+  flex-direction: row-reverse;
+}
+
+.first-last-container {
+  padding: 102px 85px;
+}
+
 .second-advantage {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -259,7 +267,8 @@ body {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  margin: 64px 347.5px 0;
+  margin: 64px auto 0;
+  max-width: 505px;
 }
 
 .services-description-main {
@@ -267,7 +276,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 20px 355px 64px;
+  margin: 20px auto 64px;
 }
 .services-list {
   display: flex;
@@ -548,16 +557,16 @@ margin: 40px auto 30px;
   }
 
   .hotels-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-    margin-left: 70px;
-    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
     list-style-type: none;
+    margin: 40px 70px;
+    padding: 0;
+    gap: 20px;
     }
 
   .hotels-card {
-    width: 340px;
+    width: 300px;
     margin-left: 0 auto;
     padding-left: 20px;
     }
@@ -565,6 +574,11 @@ margin: 40px auto 30px;
   .hotels-card-link {
     text-decoration: none;
     }
+
+  .hotels-card-image {
+    width: 100%;
+    object-fit: cover;
+  }
 
   .hotels-card-title {
     font-size: 24px;
@@ -595,6 +609,7 @@ margin: 40px auto 30px;
   .more-hotels {
     font-size: 16px;
     line-height: 20px;
+    margin-right: 16px;
   }
 
   .hotels-card-button {
@@ -605,11 +620,16 @@ margin: 40px auto 30px;
   .favorites {
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 20px;
   background-color:#82B3D3;
   }
+
+
+
   .favorites-top {
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 17px;
   background-color:#7DB54F;
   }
 
