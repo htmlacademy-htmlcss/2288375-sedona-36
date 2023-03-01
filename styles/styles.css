@@ -147,7 +147,7 @@ body {
 .hero {
   color: #000000;
   background-color:#FFFFFF ;
-  background-image: url("../images/mountains_full.jpg");
+  background-image: url("../images/mountains-full.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -566,7 +566,7 @@ margin: 40px auto 30px;
     }
 
   .hotels-card {
-    width: 340px;
+    width: 300px;
     margin-left: 0 auto;
     padding-left: 20px;
     }
@@ -574,6 +574,11 @@ margin: 40px auto 30px;
   .hotels-card-link {
     text-decoration: none;
     }
+
+  .hotels-card-image {
+    width: 100%;
+    object-fit: cover;
+  }
 
   .hotels-card-title {
     font-size: 24px;
@@ -604,7 +609,7 @@ margin: 40px auto 30px;
   .more-hotels {
     font-size: 16px;
     line-height: 20px;
-    margin-right: 20px;
+    margin-right: 16px;
   }
 
   .hotels-card-button {
@@ -616,7 +621,6 @@ margin: 40px auto 30px;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 20px;
-
   background-color:#82B3D3;
   }
 
@@ -625,7 +629,7 @@ margin: 40px auto 30px;
   .favorites-top {
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 20px;
+  padding: 8px 17px;
   background-color:#7DB54F;
   }
 
