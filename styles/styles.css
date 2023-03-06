@@ -70,6 +70,8 @@ body {
 }
 
 .button {
+  display: inline-block;
+  font-family: inherit;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700px;
@@ -78,6 +80,8 @@ body {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #756157;
+  border: none;
+  cursor: pointer;
   }
 
   .page-header {
@@ -98,7 +102,9 @@ body {
   width: 138px;
   margin-left: 70px;
   margin-right: 28px;
+  margin-bottom: -12px;
   padding: 0 ;
+  position: relative;
 }
 
 .navigation-list {
@@ -113,12 +119,38 @@ body {
 .navigation-user {
   display: flex;
   max-width: 380px;
-  margin:0 70px 0 163px;
+  margin:0 70px 0 63px;
   list-style-type: none;
   padding: 0;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.navigation-icon-green-number{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7DB54F;
+  top: 10px;
+  right: 7px;
+}
+
 .navigation-link {
+  position: relative;
   display: block;
   padding: 20px 16px;
   font-size: 20px;
@@ -130,6 +162,24 @@ body {
   text-decoration: none;
   margin: 0 auto;
 }
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+.navigation-link-current {
+  position: relative;
+}
+.navigation-link-current::after{
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  }
 
 .favorites-link {
   font-size: 16px;
@@ -172,6 +222,7 @@ body {
 }
 
 .intro-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700px;
@@ -217,6 +268,7 @@ body {
 }
 
 .advantages-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700px;
@@ -258,10 +310,8 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.services {
-
-}
 .services-title-main {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -294,6 +344,7 @@ body {
 }
 
 .services-name {
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -324,6 +375,7 @@ padding-bottom: 96px;
   margin: 0 auto;
 }
 .search-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -366,6 +418,7 @@ padding-bottom: 96px;
 }
 
 .sending-title {
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -424,13 +477,24 @@ margin: 40px auto 30px;
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 }
 
-.footer-social-item {
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 47px;
   height: 40px;
+  color: #68A2CA;
+  box-sizing: border-box;
 }
+
+.footer-social-link:active {
+color: rgba(104, 162, 202, 0.3);
+}
+
 
 .footer-contacts-address-phone {
   font-size: 40px;
@@ -483,6 +547,14 @@ margin: 40px auto 30px;
   background-color: inherit;
 }
 
+.breadcrumbs-home-link {
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/home.svg");
+  background-size: cover;
+  background-repeat: no-repeat; /* Првоерить.*/
+}
+
 .catalog-filter-title {
   font-size: 20px;
   line-height: 24px;
@@ -533,11 +605,33 @@ margin: 40px auto 30px;
   }
 
   .select-control {
+    font-family: inherit;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
     width: 292px;
     margin-left: 220px;
+    padding: 12px 20px;
+    padding-right: 40px;
+    appearance: none;
+    border: 2px solid #E5E5E5;
+    border-radius: 4px ;
+    background-image: url("../images/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center ;
+  }
+
+  .select-control:hover {
+    border-color:#68A2CA;
+  }
+
+  .select-control:focus {
+    border-color:#68A2CA;
+    outline: none;
+  }
+
+  .select-control:disabled {
+    border-color:#00000 30 %;
   }
 
   .container-criterion .button{
