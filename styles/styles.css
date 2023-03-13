@@ -255,7 +255,7 @@ body {
   font-weight: 700px;
   text-align: center;
   text-transform: uppercase;
-  margin: 69px 290px 0;
+  margin: 69px 280px 0;
 }
 
 .intro-description {
@@ -263,7 +263,7 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
-  margin: 25px 274px 69px;
+  margin: 25px 264px 69px;
 }
 
 .advantages {
@@ -293,11 +293,12 @@ body {
   height: 100%;
   width: 100%;
   max-width: 800px;
+  min-width: 800px;
   object-fit: cover;
 }
 
 .lowercase-advantages-container {
-  width: 400px;
+  width: 410px;
   padding: 0;
   padding-top: 10px;
   text-align: center;
@@ -311,6 +312,7 @@ body {
   font-weight: 700px;
   text-align: center;
   text-transform: uppercase;
+  width: 175px;
   margin: 0 auto;
 }
 
@@ -356,6 +358,7 @@ body {
 }
 
 .first-last-container {
+  max-width: 400px;
   padding: 102px 85px;
 }
 
@@ -365,6 +368,8 @@ body {
 
 .third-advantages {
   background-color: rgba(131, 179, 211, 0.2);
+  width: 240px;
+  padding: 102px 80px;
 }
 
 .fourth-advantages {
@@ -1225,6 +1230,15 @@ body {
 .control-input-min::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+.control-input-max[type=number] {
+  -moz-appearance:textfield;
+}
+
+.control-input-min[type=number] {
+  -moz-appearance:textfield;
+}
+
 
 .control-min-max label {
   position: relative;
