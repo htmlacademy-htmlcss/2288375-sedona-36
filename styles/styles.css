@@ -828,6 +828,7 @@ body {
 }
 
 .input-number .input[type="number"] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
@@ -992,7 +993,8 @@ body {
   margin-left: 40px;
   font-size: 16px;
   line-height: 21px;
-  top: 2px;
+  top: 0;
+  left: 0;
 }
 
 .breadcrumbs-link-hotels::before {
@@ -1204,10 +1206,12 @@ body {
 }
 
 .control-input-max[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
 .control-input-min[type=number] {
+  appearance: textfield;
   -moz-appearance: textfield;
 }
 
