@@ -27,31 +27,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italoc.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* PT Sans Narrow */
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
 html {
   height: 100%;
 }
@@ -74,7 +49,7 @@ body {
   font-family: inherit;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -251,11 +226,11 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   margin: 69px 280px 0;
-  }
+}
 
 .intro-description {
   font-size: 22px;
@@ -274,7 +249,7 @@ body {
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1200;
+  width: 1200px;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -298,8 +273,7 @@ body {
 
 .lowercase-advantages-container {
   width: 410px;
-  padding: 0;
-  padding-top: 10px;
+  padding: 10px 0 0 0;
   text-align: center;
 }
 
@@ -308,7 +282,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   width: 175px;
@@ -1036,14 +1010,13 @@ body {
 .catalog-filter-group {
   border: none;
   padding: 0;
-  margin: 0;
-  margin-right: 70px;
+  margin: 0 70px 0 0;
 }
 
 .catalog-filter-list {
   padding: 0;
   margin: 0;
-  list-style-type: 0;
+  list-style: none;
 }
 
 .hotels-filter {
@@ -1173,14 +1146,12 @@ body {
 }
 
 .range-toggle:focus {
-  border: 3px solid;
-  border-color: #68A2CA;
+  border: 3px solid #68A2CA;
   outline: none;
 }
 
 .range-toggle:active {
-  border: 2px solid;
-  border-color: #68A2CA;
+  border: 2px solid #68A2CA;
 }
 
 .toggle-min {
@@ -1325,7 +1296,6 @@ body {
   display: flex;
   min-width: 1060px;
   margin: 50px 70px 0;
-  margin-top: 50px;
   align-items: center;
   justify-content: center;
 }
@@ -1337,8 +1307,7 @@ body {
   font-weight: 400;
   width: 290px;
   margin-left: 196px;
-  padding: 12px 20px;
-  padding-right: 40px;
+  padding: 12px 40px 12px 20px;
   appearance: none;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1381,7 +1350,6 @@ body {
   justify-content: center;
   width: 46px;
   height: 47px;
-  padding: 14px, 12px, 14px, 12px;
 }
 
 .show-cards {
@@ -1589,6 +1557,7 @@ body {
 .favorites-top:disabled {
   opacity: 0.1;
 }
+
 .rating-container {
   width: 100%;
 }
