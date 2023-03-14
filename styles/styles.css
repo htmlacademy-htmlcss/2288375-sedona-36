@@ -65,7 +65,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   color: #333333;
 }
 
@@ -89,18 +89,14 @@ body {
   opacity: 0.1;
 }
 
-.page-header {
-  color: #000000;
-  background-color: #FFFFFF;
-}
-
 .navigation {
   display: flex;
   min-height: 100%;
-  width: 1200PX;
+  width: 1200px;
   margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 .navigation-logo {
   display: block;
@@ -229,6 +225,7 @@ body {
   width: 1200px;
   height: 485px;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .welcome {
@@ -246,6 +243,8 @@ body {
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
+  background-color: #FFFFFF;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .intro-title {
@@ -256,7 +255,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 69px 280px 0;
-}
+  }
 
 .intro-description {
   font-size: 22px;
@@ -521,6 +520,7 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 0;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sending-title {
@@ -581,11 +581,19 @@ body {
   opacity: 0.1;
 }
 
+.page-footer {
+  margin: 0 auto;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+}
+
 .page-footer-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
   margin: 39px auto 30px;
 }
 
