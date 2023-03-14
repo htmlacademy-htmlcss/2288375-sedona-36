@@ -95,7 +95,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation-logo {
@@ -225,7 +225,7 @@ body {
   width: 1200px;
   height: 485px;
   margin: 0 auto;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .welcome {
@@ -244,7 +244,7 @@ body {
   width: 1200px;
   margin: 0 auto;
   background-color: #FFFFFF;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .intro-title {
@@ -451,7 +451,7 @@ body {
 
 .search {
   padding-top: 92px;
-  padding-bottom: 96px;
+  padding-bottom: 95px;
 }
 
 .search-wrapper {
@@ -511,16 +511,17 @@ body {
 .sending {
   display: flex;
   flex-direction: column;
+  background-color: #F2F2F2;
   background-image: url("../images/subscription.jpg");
-  background-size: 100% auto, cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 414px;
+  min-height: 415px;
   color: #FFFFFF;
   margin: 0 auto;
   text-align: center;
   padding: 0;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .sending-title {
@@ -542,7 +543,6 @@ body {
 
 .newsletter-form {
   display: flex;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -555,7 +555,7 @@ body {
 
 .newsletter-button {
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -582,26 +582,20 @@ body {
 }
 
 .page-footer {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
 }
 
 .page-footer-container {
+  padding: 0 70px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: center;
   background-color: #FFFFFF;
-  margin: 39px auto 30px;
-}
-
-.footer-social {
-  display: flex;
-  margin-top: 5px;
-  margin-right: 55px;
-  width: 142px;
+  margin: 45px auto 30px;
 }
 
 .footer-social-list {
@@ -610,7 +604,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto 0 0;
   padding: 0;
 }
 
@@ -624,25 +618,23 @@ body {
   box-sizing: border-box;
 }
 
+.htmlacademy-link {
+  margin-left: auto;
+}
+
 .footer-social-link:active {
   color: rgba(104, 162, 202, 0.3);
 }
 
 
 .footer-contacts-address-phone {
+  max-width: 340px;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
   color: #000000;
-  padding-top: 8px;
-  padding-left: 45px;
-}
-
-.htmlacademy-link {
-  margin-top: 10px;
-  margin-left: 100px;
 }
 
 .modal {
@@ -930,7 +922,7 @@ body {
   left: calc(50% - 251px / 2);
   box-sizing: border-box;
   background: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   font-family: 'PT Sans', sans-serif;
   font-style: normal;
@@ -1058,10 +1050,10 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   background-image: url("../images/filter.jpg");
-  background-size: 100% auto, cover;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 412px;
+  min-height: 412px;
   margin: 0 auto;
 }
 
@@ -1458,7 +1450,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
-  margin: 40px 70px;
+  max-width: 1060px;
+  margin: 36px auto 0;
   padding: 0;
   gap: 20px;
 }
@@ -1468,10 +1461,15 @@ body {
   padding: 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hotels-card-link {
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .hotels-card-image {
@@ -1484,31 +1482,35 @@ body {
   line-height: 28px;
   text-align: left;
   color: #000000;
-  margin: 0;
-  padding-top: 10px;
+  margin: 16px 0 0 0;
 }
 
 .conteiner-price {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
 }
 
 .hotels-description {
   text-align: left;
   width: 140px;
-  height: 21px;
+  min-height: 21px;
+  margin: 16px 0 0 0;
 }
 
 .price-description {
   text-align: right;
   width: 140px;
-  height: 21px;
-  margin-left: 20px;
+  min-height: 21px;
+  margin: 16px 0 0 0;
 }
 
 .more-hotels {
+  margin: 16px 0 0 0;
+  display: block;
   font-size: 16px;
   line-height: 20px;
-  margin-right: 16px;
+  box-sizing: border-box;
 }
 
 .more-hotels:hover,
@@ -1527,14 +1529,17 @@ body {
 .hotels-card-button {
   font-weight: 700;
   padding: 8px 26px;
-  margin-top: -4px;
+  max-width: 140px;
 }
 
 .favorites {
+  margin: 16px 0 0 auto;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 20px;
   background-color: #82B3D3;
+  box-sizing: border-box;
 }
 
 .favorites:hover,
@@ -1551,6 +1556,7 @@ body {
 }
 
 .stars {
+  width: 100%;
   display: flex;
   list-style-type: none;
   padding: 0;
@@ -1564,6 +1570,7 @@ body {
 }
 
 .favorites-top {
+  margin: 16px 0 0 auto;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 17px;
@@ -1582,14 +1589,16 @@ body {
 .favorites-top:disabled {
   opacity: 0.1;
 }
+.rating-container {
+  width: 100%;
+}
 
 .rating-description {
   font-size: 16px;
   line-height: 20px;
   width: 95px;
-  height: 20px;
+  min-height: 20px;
   background-color: #F2F2F2;
-  text-align: flex-end;
   padding: 9px 23px;
   border: none;
   margin-left: auto;
@@ -1601,7 +1610,7 @@ body {
 .pagination {
   display: flex;
   margin-left: 64px;
-  margin-top: 80px;
+  margin-top: 77px;
   padding: 0;
   list-style-type: none;
 }
@@ -1651,7 +1660,7 @@ body {
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 414px;
+  min-height: 414px;
   color: #333333;
   margin: 0 auto;
   text-align: center;
@@ -1670,7 +1679,6 @@ body {
 
 .field-catalog {
   width: 430px;
-  max-height: 52px;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
@@ -1680,10 +1688,9 @@ body {
 }
 
 .sending-catalog {
-  margin: 0 auto;
-  margin-top: 42px;
+  margin: 42px auto 0;
 }
 
 .page-footer-container-catalog {
-  margin-top: 39px;
+  margin-top: 48px;
 }
