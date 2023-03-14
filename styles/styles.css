@@ -1232,11 +1232,11 @@ body {
 }
 
 .control-input-max[type=number] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .control-input-min[type=number] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 
