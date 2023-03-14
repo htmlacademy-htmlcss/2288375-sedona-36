@@ -483,6 +483,7 @@ body {
 }
 
 .sending {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
@@ -494,7 +495,7 @@ body {
   color: #FFFFFF;
   margin: 0 auto;
   text-align: center;
-  padding: 0;
+  padding-bottom: 40px;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -1638,7 +1639,6 @@ body {
 
 .field {
   width: 432px;
-  max-height: 52px;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
